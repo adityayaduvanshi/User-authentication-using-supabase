@@ -1,70 +1,54 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# User Authentication App
 
-## Available Scripts
+It is a web application built using React, Supabase, React Router DOM, and Tailwind CSS. It allows users to sign up, login, and reset their password. Upon successful login, the application fetches data from an API and displays it to the user.
 
-In the project directory, you can run:
 
-### `npm start`
+## Demo 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Live Link - https://user-supabase.vercel.app/
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- User registration: Users can create new accounts by providing their email and password.
+- User authentication: Registered users can log in to their accounts using their credentials.
+- Password reset: Users can request a password reset if they forget their password.
+- API integration: Upon successful login, the application fetches data from an API and implements lazy loading to dynamically load additional data as the user scrolls. This enhances the user experience by reducing initial loading times and optimizing resource consumption. As the user reaches the bottom of the page, new data is fetched from the API and seamlessly appended to the existing content, allowing for a smooth and uninterrupted browsing experience.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technologies Used
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **React:** A JavaScript library for building user interfaces.
+- **Supabase:** An open-source Firebase alternative that provides backend-as-a-service functionality.
+- **React Router DOM:** A library for routing and navigation in React applications.
+- **Tailwind CSS:** A utility-first CSS framework for rapidly building custom user interfaces.
+## Installation
+ 1. Clone the repository:
+ ```bash
+ https://github.com/adityayaduvanshi/User-authentication-using-supabase.git
+ ```
+ 2. Navigate to the project's root directory.
+ 3. Install the dependencies by running the following command:
+ ```bash
+ npm install
+```
+4. Create a Supabase account and set up your Supabase project.
+5. Obtain your Supabase project URL and anon key.
+6. Create a `.env` file in the project's root directory.
+7. Set the following environment variables in the `.env` file:
+```bash
+REACT_APP_SUPABASE_URL=your-supabase-project-url
+REACT_APP_SUPABASE_ANON_KEY=your-supabase-anon-key
+REACT_APP_BASE_URL=your-project-base-url
+```
+8. Run the application by executing the following command:
+```bash
+npm start
+```
+9. Open your web browser and visit `http://localhost:3000` to access the application.
+## Contact
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Email: aditya.yadsr@gmail.com
+- Twitter: @fixslyr
+- Portfolio - https://adityayads.vercel.app
