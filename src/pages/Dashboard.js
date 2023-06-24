@@ -33,7 +33,7 @@ const Dashboard = () => {
     if (!isLoading) {
       setIsLoading(true);
       const response = await fetch(
-        `https://api.instantwebtools.net/v1/passenger?page=${page}&size=25`
+        `https://api.instantwebtools.net/v1/passenger?page=${page}&size=35`
       );
       const newdata = await response.json();
       setData((prevPosts) => [...prevPosts, ...newdata?.data]);
